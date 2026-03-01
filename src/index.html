@@ -1,14 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Pizza</title>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <script src="index.js"></script>
+  <div class="pizza">
+    <div class="pizza_options">
+      <div class="pizza_option" data-type="Пепперони">
+        <img src="assets/image/Пепперони_38_900х900.webp">
+        <div>Пепперони</div>
+      </div>
+      <div class="pizza_option" data-type="Маргарита">
+        <img src="assets/image/Фридей_38_900х900.webp">
+        <div>Маргарита</div>
+      </div>
+      <div class="pizza_option" data-type="Баварская">
+        <img src="assets/image/Баварская_38_900х900.webp">
+        <div>Баварская</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <h3>Выберите размер</h3>
+    <div class="size_toggle">
+      <input type="radio" name="size" id="small" value="Маленькая" checked hidden>
+      <label for="small">Маленькая</label>
+      <input type="radio" name="size" id="large" value="Большая" hidden>
+      <label for="large">Большая</label>
+    </div>
+    <h3>Добавить по вкусу</h3>
+    <div class="addons">
+      <div class="addon" data-name="сырный борт" data-price="189" data-cal="50">
+        <img src="assets/image/сырный_бортик.png">
+        <div>Сырный борт</div>
+        <small>189₽</small>
+      </div>
+      <div class="addon" data-name="сливочная моцарелла" data-price="99" data-cal="20">
+        <img src="assets/image/сливочная_моцарелла.png">
+        <div>Сливочная моцарелла</div>
+        <small>99₽</small>
+      </div>
+      <div class="addon" data-name="чедер и пармезан" data-price="99" data-cal="50">
+        <img src="assets/image/чедер_пармезан.png">
+        <div>Чедер и пармезан</div>
+        <small>99₽</small>
+      </div>
+    </div>
+    <button class="cart_button" id="cartButton">Выберите пиццу</button>
+  </div>
+  <script  src="index.js"></script>
+
 </body>
 </html>
