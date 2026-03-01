@@ -1,12 +1,98 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
-@import "./components/index.css";
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 40px;
+    background: #f8f8f8;
+    display: flex;
+    gap: 40px;
+  }
+  .pizza, .menu {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .pizza {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pizza_options {
+    display: flex;
+    gap: 20px;
+  }
+  .pizza_option {
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border-color 0.3s;
+  }
+  .pizza_option.selected {
+    border-color: rgb(225, 0, 255);
+    background: #fde6ff;
+    font-weight: bold;
+  }
+  .pizza_option img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 
-.test {
-    color: yellow !important;
-}
+  .menu {
+    width: 300px;
+  }
+  .size_toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .size_toggle label {
+    flex: 1;
+    text-align: center;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .size_toggle input:checked + label {
+    background: #fde6ff;
+    border-color: rgb(225, 0, 255);
+    font-weight: bold;
+  }
+  .addons {
+    display: flex;
+    gap: 10px;
+  }
+  .addon {
+    flex: 1;
+    background: #fafafa;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  .addon.selected {
+    border-color: rgb(225, 0, 255);
+    background: #fde6ff;
+  }
+  .addon img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
 
-.test {
-    color: red !important;
-}
+  .cart_button {
+    margin-top: 30px;
+    background: rgb(225, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
