@@ -1,0 +1,22 @@
+body { 
+  background-color: #b4f2ff; 
+  margin: 2rem; 
+  line-height: 1.6; }
+
+ul { 
+  list-style: none; 
+  padding: 0; }
+
+li { 
+  margin: 10px 0; }
+
+a { 
+  text-decoration: none; 
+  background: #bbafff; 
+  color: black;
+  padding: 8px 15px; 
+  border-radius: 5px; 
+  display: inline-block; }
+
+a:hover { 
+  background: #9d8cff; }
